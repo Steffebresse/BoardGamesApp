@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGamesApp.LudoPage"
+             Title="Ludo">
+  <Grid Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+    <!-- Top Row -->
+    <Button x:Name="Hex0" Text="0" Grid.Row="0" Grid.Column="2" />
+    <Button x:Name="Hex1" Text="1" Grid.Row="1" Grid.Column="1" />
+    <Button x:Name="Hex2" Text="2" Grid.Row="1" Grid.Column="3" />
+
+    <!-- Middle Rows -->
+    <Button x:Name="Hex3" Text="3" Grid.Row="2" Grid.Column="0" />
+    <Button x:Name="Hex4" Text="4" Grid.Row="2" Grid.Column="2" />
+    <Button x:Name="Hex5" Text="5" Grid.Row="2" Grid.Column="4" />
+    <Button x:Name="Hex6" Text="6" Grid.Row="3" Grid.Column="1" />
+    <Button x:Name="Hex7" Text="7" Grid.Row="3" Grid.Column="3" />
+
+    <!-- Bottom Row -->
+    <Button x:Name="Hex8" Text="8" Grid.Row="4" Grid.Column="2" />
+
+    <!-- Controls -->
+    <VerticalStackLayout Grid.Row="5" Grid.ColumnSpan="5" Padding="20" Spacing="10">
+      <Button x:Name="RollDiceButton" Text="Roll Dice" Clicked="OnRollDiceClicked" />
+      <Label x:Name="DiceResultLabel" Text="Dice Result: " FontSize="18" />
+      <Label x:Name="PlayerTurnLabel" Text="Player 1's Turn" FontSize="18" />
+      <Label x:Name="GameStatusLabel" Text="" FontSize="18" />
+    </VerticalStackLayout>
+  </Grid>
+</ContentPage>
+

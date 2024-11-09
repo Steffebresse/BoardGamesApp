@@ -1,0 +1,11 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGamesApp.MainPage"
+             Title="Board Games">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Choose a Game" FontSize="24" HorizontalOptions="Center" />
+        <Button Text="Chess" Clicked="OnChessClicked" />
+        <Button Text="Ludo" Clicked="OnLudoClicked" />
+        <Button Text="Tic-Tac-Toe" Clicked="OnTicTacToeClicked" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,16 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGamesApp.TicTacToePage"
+             Title="Tic-Tac-Toe">
+  <Grid x:Name="TicTacToeGrid" Padding="20" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
+    <Button x:Name="Button0" StyleId="0" Clicked="OnButtonClicked" />
+    <Button x:Name="Button1" StyleId="1" Grid.Column="1" Clicked="OnButtonClicked" />
+    <Button x:Name="Button2" StyleId="2" Grid.Column="2" Clicked="OnButtonClicked" />
+    <Button x:Name="Button3" StyleId="3" Grid.Row="1" Clicked="OnButtonClicked" />
+    <Button x:Name="Button4" StyleId="4" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" />
+    <Button x:Name="Button5" StyleId="5" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" />
+    <Button x:Name="Button6" StyleId="6" Grid.Row="2" Clicked="OnButtonClicked" />
+    <Button x:Name="Button7" StyleId="7" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" />
+    <Button x:Name="Button8" StyleId="8" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" />
+  </Grid>
+</ContentPage>
